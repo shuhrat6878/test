@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form UI</title>
+  <link rel="stylesheet" href="./style.css">
+  
+</head>
+<body>
+
+<form>
+  <label for="username">Username</label>
+  <input type="text" id="username" placeholder="Enter username">
+
+  <label for="password">Password</label>
+  <input type="password" id="password" placeholder="Enter password">
+  <small>Your password is between 4 and 12 characters</small>
+
+  <div class="error">
+    <label for="input">Input Text Label</label>
+    <input type="text" id="input" value="Typing |">
+    <span class="error-message">Error message informing me of a problem</span>
+  </div>
+
+  <div class="checkbox">
+    <input type="checkbox" id="remember">
+    <label for="remember">Remember me</label>
+  </div>
+
+  <div class="toggle-switch">
+    <label for="toggle">Off</label>
+    <input type="checkbox" id="toggle">
+  </div>
+
+  <div class="radio-group">
+    <input type="radio" id="r1" name="radio">
+    <label for="r1">Radio selection 1</label><br>
+    <input type="radio" id="r2" name="radio" checked>
+    <label for="r2">Radio selection 2</label><br>
+    <input type="radio" id="r3" name="radio">
+    <label for="r3">Radio selection 3</label>
+  </div>
+
+  <label for="dropdown">Dropdown Title</label>
+  <select id="dropdown">
+    <option>Dropdown option</option>
+    <option>Dropdown option 1</option>
+    <option>Dropdown option 2</option>
+  </select>
+
+  <div class="actions">
+    <button type="button" class="btn cancel">Cancel</button>
+    <button type="submit" class="btn next">Next</button>
+  </div>
+</form>
+
+</body>
+</html>
